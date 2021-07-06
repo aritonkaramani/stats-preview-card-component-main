@@ -30,7 +30,7 @@ https://imgur.com/a/06cdsBh
 ### Links
 
 - Solution URL: (https://github.com/aritonkaramani/stats-preview-card-component-main)
-- Live Site URL: (TBD)
+- Live Site URL: (https://aritonkaramani.github.io/stats-preview-card-component-main/)
 
 ## My process
 - Started with adding a card section
