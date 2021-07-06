@@ -22,18 +22,19 @@ body {
 .right {
     border-radius: 0 10px 10px 0; 
     width: 500px;
-    background: url('image-header-desktop.jpg');
+    background: linear-gradient(rgba(188, 38, 207, 0.24),rgba(188, 38, 207, 0.24)),url('image-header-desktop.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow:hidden;
 }
 .left {
     margin: 40px;
     font-size: 32px;
     font-family: inter;
     font-weight:700;
-    width: 500px;
+    width: 400px;
     color: hsl(0, 0%, 100%)
 }
 .accent {
@@ -44,9 +45,52 @@ body {
     font-weight: 400;
     font-size: 15px;
 }
-.footer-info{
+.footer-info ul{
+    padding-left: 0;
     display: flex;
-    flex-direction: row;
+    list-style: none;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 350px;
+}
+.attribution {
+    color: white;
+}
+@media only screen and (max-width: 624px) {
+    .card {
+        height: 800px;
+        width: 400px;
+        flex-direction: column-reverse;
+    }
+    .right {
+        height: 450px;
+        width: 400px;
+        background: linear-gradient(rgba(188, 38, 207, 0.24),rgba(188, 38, 207, 0.24)),url('image-header-mobile.jpg');
+        background-size: contain;
+        border-radius: 10px 10px 0 0;
+        padding-left: 0;
+    }
+    .left {
+        height: 800px;
+        width: 400px;
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+    .footer-info ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        margin: 25px;
+    }
+    .para{
+        display: block;
+        justify-items: center;
+        text-align: center;
+        width: 300px;
+        margin-left: 50px;
+
+    }
 }
